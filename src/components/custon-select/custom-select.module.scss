@@ -1,0 +1,54 @@
+@import '../../styles/variables';
+
+.container {
+    position: relative;
+    width: 150px;
+    height: 56px;
+    display: flex;
+    background: $main-blue-color;
+    color: $main-white;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+.selected {
+    border-radius: 5px;
+  }
+
+.select_btn, .open {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $main-blue-color;
+    width: 100%;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+.options li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+.options li:hover {
+    background: $secondary-hover;
+  }
+
