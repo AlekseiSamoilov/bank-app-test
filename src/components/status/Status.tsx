@@ -1,13 +1,25 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import styles from './status.module.scss'
 
 const Status = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+    const items = ['Все статьи', 'Разнесены', 'Неразнесены'];
+
     return (
-        <ul className={styles.container}>
-            <li id='all' className={styles.li_el}>Все статьи</li>
-            <li id='done' className={styles.li_el}>Разнесены</li>
-            <li id='undone' className={styles.li_el}>Неразнесены</li>
-        </ul>
+        <div className={styles.container}>
+            <div className={styles.slider}
+                style={{
+                    width: `${100 / items.length - 2}%`,
+                    left: `${(100 / items.length) * activeIndex + 1}%`,
+                }}
+            />
+            {items.map((item, index) => (
+                <button
+                    key={item}
+                    onClick={() => setActiveIndex(index)}
+                    className={`${styles.button} ${activeIndex === index ? styles.active : ''}`}>{item}</button>
+            ))}
+        </div>
     )
 }
 
