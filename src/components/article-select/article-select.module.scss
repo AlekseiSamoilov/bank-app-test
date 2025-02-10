@@ -13,7 +13,6 @@
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
 }
 
 .blue {
@@ -39,7 +38,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: $secondary-blue-light;
+    background-color: $main-white;
     width: 100%;
     border-radius: 5px;
     list-style: none;
@@ -47,6 +46,7 @@
     margin: 5px 0;
     max-height: 150px;
     overflow-y: auto;
+    z-index: 10;
   }
   
 .options li {
@@ -57,4 +57,16 @@
 .options li:hover {
     background: $secondary-hover;
   }
+
+.additional__btn_green {
+    background-color: $secondary-green;
+    border: none;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    padding-top: 5px;
+    margin-right: 14px;
+    margin-left: auto;
+    cursor: pointer;
+}
 

@@ -3,7 +3,7 @@
 .container {
     position: relative;
     width: 150px;
-    height: 56px;
+    height: 48px;
     display: flex;
     background: $main-blue-color;
     color: $main-white;
@@ -13,7 +13,6 @@
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
 }
 .selected {
     border-radius: 5px;

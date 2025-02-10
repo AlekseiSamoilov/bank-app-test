@@ -1,18 +1,13 @@
 import './App.css'
 import Header from './components/header/Header'
-import CustomSelect from './components/custon-select/CustomSelect'
-import Status from './components/status/Status'
-import ArticleSelect from './components/article-select/ArticleSelect'
+import BankingTable from './components/banking-table/BankingTable'
 
 function App() {
 
   return (
     <>
       <Header />
-      <CustomSelect />
-      <Status />
-      <ArticleSelect
-      />
+      <BankingTable />
     </>
   )
 }
