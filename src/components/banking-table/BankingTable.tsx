@@ -30,8 +30,14 @@ const BankingTable = () => {
             <h1 className={styles.title}>Банки</h1>
             <div className={styles.main_content}>
                 <div className={styles.header}>
-                    <CustomSelect />
-                    <Status />
+                    <div className={styles.selectors}>
+                        <CustomSelect />
+                        <Status />
+                    </div>
+                    <div className={styles.buttons}>
+                        <button className={styles.load_btn}>Загрузить выписку</button>
+                        <button className={styles.rules_btn}>Правила</button>
+                    </div>
                 </div>
                 <table className={styles.table}>
                     <thead className={styles.thead}>

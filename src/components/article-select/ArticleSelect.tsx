@@ -12,9 +12,13 @@ const ArticleSelect: React.FC = () => {
         <div className={selected === 'Выберете статью!' ? `${styles.container}` : `${styles.blue}`}>
             <div className={styles.selected}>{selected}</div>
             {selected === 'Вывод ЧП' && (
-                <button className={styles.additional__btn_green}><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14 7.75H7M14 4H7M5.5 4H4M5.5 7.75H4M5.5 11.5H4M14 11.5H7M9 17L13 14.5H16C16.5523 14.5 17 14.0523 17 13.5V2C17 1.44772 16.5523 1 16 1H2C1.44772 1 1 1.44772 1 2V13.5C1 14.0523 1.44772 14.5 2 14.5H5.125L9 17Z" stroke="white" stroke-linejoin="round" />
-                </svg>
+                <button
+                    className={styles.additional__btn_green}
+
+                >
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 7.75H7M14 4H7M5.5 4H4M5.5 7.75H4M5.5 11.5H4M14 11.5H7M9 17L13 14.5H16C16.5523 14.5 17 14.0523 17 13.5V2C17 1.44772 16.5523 1 16 1H2C1.44772 1 1 1.44772 1 2V13.5C1 14.0523 1.44772 14.5 2 14.5H5.125L9 17Z" stroke="white" stroke-linejoin="round" />
+                    </svg>
                 </button>
             )}
             {isOpen && (

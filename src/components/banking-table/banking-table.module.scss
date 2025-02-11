@@ -21,7 +21,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .table_row {
@@ -34,7 +38,14 @@
 
 .table_head {
     padding: 21px 10px;
-    text-align: start;
+    text-align: end;
+    &:nth-child(1) { width: 8%; } 
+    &:nth-child(2) { width: 12%; } 
+    &:nth-child(3) { width: 12%; } 
+    &:nth-child(4) { width: 8%; }  
+    &:nth-child(5) { width: 25%; } 
+    &:nth-child(6) { width: 15%; } 
+    &:nth-child(7) { width: 10%; } 
 }
 
 .table_body {
@@ -44,4 +55,34 @@
 .table_data {
     font-size: 14px;
     padding: 5px 10px;
+    text-align: end;
+}
+
+.selectors {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.load_btn {
+    border: none;
+    color: $main-blue-color;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    background-color: $secondary-blue-light;
+    width: 170px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.rules_btn {
+    @extend .load_btn;
+    width: 140px;
+    color: $main-white;
+    background-color: $main-blue-color;
 }
