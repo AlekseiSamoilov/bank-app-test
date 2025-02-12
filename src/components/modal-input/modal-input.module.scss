@@ -1,0 +1,28 @@
+@import '../../styles/variables';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label {
+    text-align: start;
+}
+
+.input {
+    height: 46px;
+    border: 1px solid $secondary-gray-light;
+    color: $secondary-gray;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 250px;
+    font-weight: 600;
+    text-align: center
+}
+
+input::placeholder {
+    font-weight: 300;
+    font-size: 14px;
+    color: $secondary-gray;
+}

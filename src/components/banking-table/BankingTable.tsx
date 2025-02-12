@@ -60,7 +60,10 @@ const BankingTable = () => {
                                 <td className={styles.table_data}>{row.bank}</td>
                                 <td className={styles.table_data}>{row.contractor}</td>
                                 <td className={styles.table_data}>
-                                    <ArticleSelect />
+                                    <ArticleSelect
+                                        value={row.article || 'Выберете статью!'}
+                                        onChange={(value) => handleArticleChange(row.id, value)}
+                                    />
                                 </td>
                                 <td>{row.description}</td>
                             </tr>
